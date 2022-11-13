@@ -1,0 +1,481 @@
+
+
+/* LOGO E MENU */
+
+
+
+body{
+	margin:0;
+	padding: 0;
+	background-color: #EAF1F6;
+	
+}
+
+header.cabecalho{
+	width: 100%;
+	/*max-width: 1382px;*/
+	height: 105px;
+	background-color: #C8D7E0;
+	}
+	
+header.cabecalho div.topo{
+		width: 100%;
+		max-width: 1328px;
+		height: 105px;
+		/*background-color: pink;*/
+		margin: auto;
+	}
+
+
+#check , .ftmenu {
+	display: none;
+	float: right;
+	right: 0;
+	
+}
+
+
+
+
+header.cabecalho div.topo img.logo {
+			float: left;
+			width: 200px;
+			height: auto;
+			margin-left: 120px;
+		}
+
+header.cabecalho div.topo nav.menu {
+			width: 500px;
+			height: 10px;
+			/*background-color: mediumpurple;*/
+			float: right;
+			margin-right:  150px;
+			margin-top: 40px;
+	
+			}
+
+
+			
+header.cabecalho div.topo nav.menu ul li {
+			display: inline;
+			font-family: roboto, sans-serif;
+			font-size: 18px;
+			margin: 15px;
+			}
+
+header.cabecalho div.topo nav.menu ul li a{
+				color: #262023;
+				text-decoration: none;
+				padding: 15px;
+				/*border: 2px solid #92AEC1;*/
+				position: relative;
+				z-index: 1;
+				}
+
+header.cabecalho div.topo nav.menu ul li a::before{
+						content: "";
+						position: absolute;
+						left: 0;
+						width: 100%;
+						height: 0%;
+						background: #d1ccd9;
+						transition: 0.8s;
+						z-index: -1;
+						top: 0;
+						border-radius: 0 0 25% 25%;
+					}
+header.cabecalho div.topo nav.menu ul li a:hover{
+							color: #fff;
+							transition-duration: 0.9s;
+						}
+
+header.cabecalho div.topo nav.menu ul li a:hover::before{
+								height: 100%;
+							}
+
+									/* FIM LOGO E MENU */
+
+/* MEIO DO SITE*/
+
+
+.titulo h2 {
+	/*background-color: aqua;*/
+	text-align: center;
+	padding-top:30px;
+	color: black;
+	font-family: roboto, sans-serif ;
+	font-size: 30px;
+	font-weight: 700;
+		
+}
+
+.subtitulo{
+	text-align: center;
+	/*padding-top:18px;*/
+	color: black;
+	font-family: sacramento;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	/*padding-bottom: 50px;*/
+	
+}
+
+section.conteudo {
+	width: 100%;
+	height: auto;	
+	padding-top: 80px;
+	opacity: 1;
+	
+	}
+
+
+
+
+				/*FIM DO MEIO DO SITE*/
+
+/*RODAPE*/
+
+
+.rodape{
+	width: 100%;
+	height: 150px;
+	background-color: #C8D7E0;
+	clear: both;
+}
+
+h5{
+	color: #404040;
+	font-family: roboto, sans-serif ;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.rodape .institucional{
+	width: 360px;
+	height: 130px;
+	/*background-color: red;*/
+	float: left;
+	
+}
+
+				.rodape .institucional ul{
+					list-style: none;
+					margin-top: 10px;
+					margin-left: 85px;
+					
+				}
+
+
+				.rodape .institucional ul li{
+					margin: 15px;
+					}
+
+				.rodape .institucional ul li a{
+					text-decoration: none;
+					font-family: roboto, sans-serif;
+					font-size: 14px;
+					color: gray;
+					
+
+				}
+
+				.rodape .institucional ul li a:hover{
+					border-bottom: 4px solid #d1ccd9;
+
+
+
+				}
+
+.rodape .contato {
+	width: 360px;
+	height: 130px;
+	/*background-color: purple;*/
+	float: left;
+		
+	
+}
+
+				.rodape .contato ul{
+					list-style: none;
+					margin-top: 30px;
+					margin-left: 85px;
+					
+				}
+
+
+				.rodape .contato ul li{
+					text-decoration: none;
+					margin: 15px;
+					font-family: roboto, sans-serif;
+					font-size: 14px;
+					color: gray;
+					}
+
+
+
+
+
+.rodape .redessociais{
+	width: 360px;
+	height: 130px;
+	/*background-color: pink;*/
+	float: left;
+	
+}
+
+.rodape .redessociais #insta{
+	margin-top: 30px;
+	margin-left: 120px;
+	
+}
+.rodape .redessociais #face{
+	margin-top: 30px;
+	margin-left: 25px;
+	
+}
+
+
+       /* R E S P O N S I V O */
+
+@media screen and (max-width: 1060px) and (min-width: 668px) {
+	
+	.cabecalho .topo{
+		width: 100%
+	}
+
+header.cabecalho div.topo img.logo {
+			float: left;
+			width: 180px;
+			height: auto;
+			margin-left: 50px;
+		}
+
+header.cabecalho div.topo nav.menu {
+			width: 500px;
+			height: 10px;
+			/*background-color: mediumpurple;*/
+			float: right;
+			margin-right:  30px;
+			margin-top: 35px;
+	
+			}
+
+
+			
+header.cabecalho div.topo nav.menu ul li {
+			font-size: 16px;
+			margin: 5px;
+			}
+	
+	
+	h5{
+	font-size: 16px;
+	text-align: center;
+	margin-top: 5px;
+	
+}
+	
+	.rodape {
+		width: 100%;
+	}
+.rodape .institucional {
+		width: 250px;
+		
+	}
+			.rodape .institucional ul{
+	
+					margin-left: 40px;
+					
+				}
+
+
+				
+				.rodape .institucional ul li a{
+					font-size: 14px;
+					
+				}
+
+				
+.rodape .contato {
+	width: 250px;
+	margin-left: 0px;
+	
+	
+}
+
+				.rodape .contato ul{
+						margin-left: 45px;
+				}
+
+
+
+.rodape .redessociais{
+width: 250px;
+	float: left;
+	margin-left: 0;
+	
+}
+
+.rodape .redessociais #insta{
+	margin-left: 80px;
+	
+}
+.rodape .redessociais #face{
+	margin-top: 30px;
+	margin-left: 20px;
+	
+}
+
+	
+	#album{
+		width: 100%;
+		left: 0;
+	}	
+	
+	
+	
+
+
+
+
+@media screen and (max-width:450px) {
+
+	.ftmenu {
+		display: block;
+		float: right;
+		position: relative;
+		top: -60px;
+		right: 10px;
+		opacity: 80%;
+		}
+	
+	input[type="checkbox"]:checked ~ ul{
+		transform: translateY(450px);
+	}
+	
+	header.cabecalho div.topo nav.menu {
+		/*width: 100%;*/
+		margin: 0;
+		padding: 0;
+		background-color: #C8D7E0;
+		
+		
+	}
+	
+	header.cabecalho div.topo nav.menu  ul{
+		position: absolute;
+		width: 100%;
+		top: -350px;
+	}
+	
+
+	header.cabecalho div.topo nav.menu ul li {
+		width: 90%; 
+		max-width: 400px;
+		left: 30px;
+		display: block;
+		font-size: 12px;
+		text-align: center;
+		padding: 10px;
+		border-bottom: 0.5px solid #fff;
+		background-color: #C8D7E0;
+		position: relative;
+		border-radius: 50px;
+		
+		
+		
+	}
+	header.cabecalho div.topo{
+		width: 100%;
+		
+	}
+	header.cabecalho div.topo img.logo {
+				float: left;
+				width: 180px;
+				height: auto;
+				margin-left: 25%;
+			}
+
+
+		h5{
+		font-size: 12px;
+		text-align: center;
+		margin-top: 5px;
+
+	}
+	.rodape .institucional {
+			width: 100px;
+
+		}
+	.rodape .institucional ul{
+
+		margin-left: 0px;
+		padding: 0;
+
+					}
+
+
+
+	.rodape .institucional ul li a{
+						font-size: 10px;
+
+					}
+
+
+	.rodape .contato {
+		width: 100px;
+		margin-left: 0px;
+
+
+	}
+
+	.rodape .contato ul{
+		margin-left: 0px;
+		padding: 0;
+					}
+
+
+	.rodape .contato ul li {
+		font-size: 12px;
+		
+		
+	}
+	.rodape .redessociais{
+		width: 100px;
+		float: left;
+		margin-left: 80px;
+
+	}
+
+	.rodape .redessociais #insta{
+		margin-left: 5px;
+
+	}
+	.rodape .redessociais #face{
+		margin-top: 5px;
+		margin-left: 15px;
+
+	}
+
+	.rodape .redessociais #insta{
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-left: 20px;
+	
+}
+	.rodape .redessociais #face{
+	width: 20px;
+	height: 20px;
+	float: left;
+
+	
+
+
+}
+
+	}

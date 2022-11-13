@@ -1,0 +1,123 @@
+
+h3 {
+	color: black;
+	font-family: montserrat ;
+	font-size: 18px;
+	font-weight: 700;
+	
+}
+
+
+
+p {
+	color:#333;
+	font-family: montserrat;
+	font-size: 14px;
+	line-height: 20px;
+		
+	
+}
+
+#ft {
+	 width:300px;
+}
+
+
+#fotosobre{
+	float: left;
+	margin-left: 100px;
+	/*overflow: hidden;*/
+	position: relative;
+	margin-top: 100px;
+	
+	
+}
+
+#textosobre{
+	margin-top: 100px;
+	width: 45%;
+	float: left;
+	margin-left: 100px;
+	
+}
+
+
+@media screen and (max-width: 1060px) and (min-width: 668px){
+	#ft{
+		width: 250px;
+	}
+	
+	
+	#fotosobre{
+	width: 100px;
+	float: left;
+	margin-left: 30px;
+	/*overflow: hidden;*/
+	position: relative;
+	margin-top: 200px;
+	
+	
+}
+
+#textosobre{
+	margin-top: 100px;
+	width: 45%;
+	float: left;
+	margin-left: 180px;
+	
+}
+	
+	
+	
+	
+}
+
+
+
+@media screen and (max-width:450px){
+	
+	h3 {
+	color: black;
+	font-family: montserrat ;
+	font-size: 16px;
+	font-weight: 700;
+	
+}
+
+
+
+p {
+	color:#333;
+	font-family: montserrat;
+	font-size: 12px;
+	line-height: 20px;
+		
+	
+}
+	#ft{
+		width: 150px;
+		
+	}
+	
+	
+	#fotosobre{
+	width: 100%;
+	float: left;
+	margin-left: 30px;
+	/*overflow: hidden;*/
+	position: absolute;
+	margin-top: 200px;
+	
+	
+	
+}
+
+#textosobre{
+	margin-top: 100px;
+	width: 45%;
+	float: left;
+	margin-left: 190px;
+	
+}
+	
+}

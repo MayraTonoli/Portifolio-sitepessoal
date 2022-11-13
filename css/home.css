@@ -1,0 +1,389 @@
+section.conteudo div#meiodosite {
+	/*background-color: red;*/
+	width: 100% ;
+	height: auto ;
+	
+	
+}
+
+ /* TEXTO */
+
+
+section.conteudo div#meiodosite div#textosobre{
+	width: 550px ;
+	height: 150px ;
+	margin-left: 10%;
+	margin-top: 100px;
+	float: left;
+	
+	
+}
+
+section.conteudo div#meiodosite div#textosobre h2{
+	color: black;
+	font-family: montserrat ;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
+
+}
+
+section.conteudo div#meiodosite div#textosobre p{
+	color:#333;
+	font-family: montserrat;
+	font-size: 14px;
+	line-height: 20px;
+		
+}
+
+
+/* IMAGEM*/
+
+section.conteudo div#meiodosite div#fotosobre{
+	/*background-color: pink;*/
+	float: left;
+	margin-left: 50px;
+	margin-top: 100px;
+	/*overflow: hidden;*/
+	position: relative;
+	}
+
+section.conteudo div#meiodosite div#fotosobre img {
+	width: 340px;
+	height: 340px;
+	/*border: 6px solid #fff;*/
+	position: relative;
+	
+}
+
+section.conteudo div#meiodosite div#fotosobre img:hover {
+	/*transition: 1.5s;
+	transform: scale(1.25 , 1.25);
+	opacity: 100%;*/
+	animation-name: foto;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;	
+	box-shadow: 0 0 50px 10px gray ;
+	
+	
+		}
+
+@keyframes foto{
+	0%{
+		transform: scale(1.0);
+		}
+	100%{
+		transform: scale(1.1);
+		}
+	
+	
+	
+	/* BOTÃO SAIBA MAIS */
+	
+}
+section.conteudo div#meiodosite div#fotosobre img:hover {
+	display:flex;
+	}
+
+.saibamais {
+	width: 140px;
+	margin-top: 20px;
+	margin-left: 150px;
+	background: linear-gradient(to right,#C8D7E0,#d1ccd9);
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	
+	
+}
+.saibamais a{
+	text-decoration: none;
+	cursor: pointer;
+	transition: background, 2s;
+	color: #616161;
+	font-family: roboto, sans-serif;
+}
+
+.saibamais:hover{
+	box-shadow: 0 0 50px 10px gray ;
+	animation-name: botao;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;	
+	
+	
+}
+
+@keyframes botao{
+	0%{
+		transform: scale(1.0);
+		}
+	100%{
+		transform: scale(1.1);
+		}
+}
+
+
+/* FOTO BANNER */
+
+
+.galeria {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+.galeria .fotos {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	float: left;
+	animation: animate 10s linear infinite;
+	}
+
+.galeria .fotos .foto {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	float: left;
+	
+}
+
+
+.galeria .fotos .foto .animacao {
+	position: absolute;
+	bottom: 20px;
+	left: 60px;
+	right: 60px;
+	padding: 20px;
+	background: #d1ccd9;
+	opacity: 0.8;
+	box-sizing: border-box;
+	transition: 0.5s;
+	
+}
+
+.galeria .fotos .foto .animacao h3{
+	text-align: center;
+	color: #1A1A1A;
+	font-family: roboto, sans-serif ;
+	font-size: 20px;
+	font-weight: 700;
+	transition: 0.5s;
+	
+	
+}
+
+.galeria .fotos .foto.foto1 {
+	background: url("../img/banner2.jpg");
+	background-size: cover;
+	background-position: center;
+	
+}
+.galeria .fotos .foto.foto2 {
+	background: url("../img/banner1.jpg");
+	background-size: cover;
+	background-position: center;
+	
+}
+.galeria .fotos .foto.foto3 {
+	background: url("../img/banner5.png");
+	background-size: cover;
+	background-position: center;
+	}
+
+@keyframes animate{
+
+0% {
+	left:0;
+}
+20% {
+	left:0;
+}
+40% {
+	left:-100%;
+}
+50% {
+	left:-100%;
+}
+65% {
+	left:-100%;
+}
+85% {
+	left:-200%;
+}
+90% {
+	left:-200%;
+}
+	
+99% {
+	left:-200%;
+	}
+
+	100%{
+		left: 0;
+		
+	}	
+	
+}
+
+
+
+
+			/* R E S P O N S I V O */
+
+@media screen and (max-width: 1060px) and (min-width: 668px){
+	section.conteudo div#meiodosite div#textosobre{
+	width: 400px ;
+	height: 100px ;
+	margin-top: 100px;
+	float: left;
+	
+	
+}
+
+section.conteudo div#meiodosite div#textosobre h2{
+	color: black;
+	font-family: montserrat ;
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 20px;
+
+}
+
+section.conteudo div#meiodosite div#textosobre p{
+	color:#333;
+	font-family: montserrat;
+	font-size: 12px;
+	line-height: 18px;
+		
+}
+
+
+/* IMAGEM*/
+
+section.conteudo div#meiodosite div#fotosobre{
+	/*background-color: pink;*/
+	float: left;
+	margin-left: 20px;
+	margin-top: 100px;
+	/*overflow: hidden;*/
+	position: relative;
+	}
+
+section.conteudo div#meiodosite div#fotosobre img {
+	width: 250px;
+	height: 250px;
+	/*border: 6px solid #fff;*/
+	position: relative;
+	
+}
+	
+	
+	
+	
+}
+
+@media screen and (max-width:450px) {
+	
+		section.conteudo div#meiodosite div#textosobre{
+			width: 200px ;
+			height: auto;
+			margin-top: 100px;
+			float: left;
+
+
+		}
+
+		section.conteudo div#meiodosite div#textosobre h2{
+			color: black;
+			font-family: montserrat ;
+			font-size: 12px;
+			font-weight: 700;
+			margin-bottom: 20px;
+
+		}
+
+		section.conteudo div#meiodosite div#textosobre p{
+			color:#333;
+			font-family: montserrat;
+			font-size: 10px;
+			line-height: 14px;
+
+		}
+
+
+		/* IMAGEM*/
+
+		section.conteudo div#meiodosite div#fotosobre{
+			/*background-color: pink;*/
+			float: left;
+			margin-left: 0px;
+			margin-top: 150px;
+			/*overflow: hidden;*/
+			position: relative;
+			}
+
+		section.conteudo div#meiodosite div#fotosobre img {
+			width: 150px;
+			height: 150px;
+			/*border: 6px solid #fff;*/
+			position: relative;
+
+		}
+
+		
+		.saibamais {
+	width: 80px;
+	margin-top: 10px;
+	margin-left: 50px;
+	background: linear-gradient(to right,#C8D7E0,#d1ccd9);
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+			font-size: 10px;
+
+
+
+
+}
+
+
+.galeria {
+	width: 100%;
+	height: auto;
+	
+}
+
+	.galeria .fotos {
+		height: 250px;
+	float: left;
+	animation: animate 10s linear infinite;
+	}
+	
+	
+	.galeria .fotos .foto .animacao h3{
+		font-size: 12px;}
+	
+	.galeria .fotos .foto .animacao {
+	
+	padding: 5px;
+	
+}
+
+
+}
+
+
+
+
+
+
+
+
+

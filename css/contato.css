@@ -1,0 +1,217 @@
+/* FORMULÁRIO */
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #EAF1F6;
+	
+	
+}
+
+
+section.contato{
+	width: 100%;
+	height: 800px;
+	/*background-color: pink;*/
+	margin: auto;
+	margin-top: 250px;
+	
+}
+
+.contato #boxformulario {
+	max-width: 70%;
+	height: 500px;
+	/*background-color: aqua;*/
+	margin: auto;
+	
+		
+	
+}
+
+.contato #boxformulario h3 {
+	color: black;
+	font-family: montserrat ;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	
+
+}
+
+.contato #boxformulario form input {
+	width: 25%;
+	height: 30px;
+	margin: 20px ;
+	border: 1px solid #d1ccd9;
+	color: #1a1a1a;
+	font-size: 12px;
+	font-family: montserrat;
+	padding-left: 10px;
+		
+}
+
+
+.contato #boxformulario form textarea{
+	width: 89%;
+	height: 90px;
+	color: #1a1a1a;
+	font-family: montserrat;
+	font-size: 12px;
+	border: 1px solid #d1ccd9;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	
+
+}
+
+.contato #boxformulario form input#id_enviar {
+	background: linear-gradient(to right,#C8D7E0,#d1ccd9);
+	padding: 15 0 30 0;
+	cursor: pointer;
+	transition: background, 2s;
+	color: #1a1a1a;
+	font-size:14px;
+	font-family: montserrat;
+	text-transform: uppercase;
+	font-weight:bold;	
+	
+	
+	
+	
+	
+}
+
+
+.contato #boxformulario form input#id_enviar:hover{
+	box-shadow: 0 0 50px 10px gray ;
+	animation-name: botao;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;	
+	
+	
+}
+
+@keyframes botao{
+	0%{
+		transform: scale(1.0);
+		}
+	100%{
+		transform: scale(1.1);
+		}
+}
+
+
+#instagram {
+	float: left;
+	margin-left: 30%;
+	
+}
+
+#facebook{
+	float: left;
+	margin-left: 30px;
+	
+}
+
+#whatsapp {
+	float: left;
+	margin-left: 30px;
+	
+	
+}
+
+@media screen and (max-width: 1060px) and (min-width: 668px){
+	
+	#instagram {
+	float: left;
+	margin-left: 20%;
+	
+}
+
+#facebook{
+	float: left;
+	margin-left: 20px;
+	
+}
+
+#whatsapp {
+	float: left;
+	margin-left: 20px;
+	
+	
+}
+	
+	
+}
+
+@media screen and (max-width:450px){
+
+	section.contato{
+	width: 100%;
+		height: auto;
+	
+	}
+	
+		#instagram {
+			display: none;
+
+		}
+
+		#facebook{
+			display: none;
+
+		}
+
+		#whatsapp {
+			float: left;
+			margin-left: 100px;
+			padding: 10px;
+	
+	
+}
+	.contato #boxformulario h3 {
+	color: black;
+	font-family: montserrat ;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	
+
+}
+
+.contato #boxformulario form input {
+	width: 25%;
+	height: 30px;
+	margin: 20px ;
+	border: 1px solid #d1ccd9;
+	color: #1a1a1a;
+	font-size: 9px;
+	font-family: montserrat;
+	padding-left: 10px;
+		
+}
+
+
+.contato #boxformulario form textarea{
+	width: 89%;
+	height: 90px;
+	color: #1a1a1a;
+	font-family: montserrat;
+	font-size: 9px;
+	border: 1px solid #d1ccd9;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	
+	
+	
+	
+	
+	
+	
+}

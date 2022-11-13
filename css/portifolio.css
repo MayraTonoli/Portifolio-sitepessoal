@@ -1,0 +1,161 @@
+h3{
+	color: black;
+	font-family: montserrat ;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+p{
+	text-align: center;
+	font-family: montserrat ;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 0 50px 0;
+}
+
+hr{height:3px;
+	border-width:0;
+	color: #63AFF5;
+}
+
+.conteudo{
+	margin-top: 100px;
+	
+	
+	
+}
+
+.container{
+	margin-top: 100px;
+	
+	
+	
+}
+
+ .fotogaleria #album {
+	width: 100%;
+	 /*height: 1500px;*/
+	list-style: none;
+	/*padding: 50px;*/
+	overflow: hidden;
+	margin-left: 230px;
+	/*background-color: blue;*/
+	 
+	 
+	
+	
+}
+ .fotogaleria #album li {
+	float: left;
+	margin: 15px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid #fff;
+	box-shadow: 2px 2px 4px #cccc;
+	transition: 1s ease-in;
+	
+}
+
+
+ .fotogaleria #album li#foto1{
+	background: url("../img/fotogaleria1.jpg");
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	}
+
+ .fotogaleria #album li#foto2{
+	background: url("../img/fotogaleria2.png");
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	}
+
+ .fotogaleria #album li#foto3{
+	background: url("../img/fotogaleria5.png");
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	}
+
+ .fotogaleria #album li#foto4{
+	background: url("../img/fotogaleria4.png");
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	}
+
+ 
+		.fotogaleria #album li span{
+			font-size: 16px;
+			line-height: 350px;
+			padding: 5px;
+			color: #fff;
+			text-shadow: 1px 1px 1px #000000;
+			opacity: 0;
+		}
+
+				.fotogaleria #album li:hover span{
+					opacity: 1;
+				}
+
+
+.fotogaleria #album li#foto1:hover{
+	background-size: 200px 200px;
+}
+
+.fotogaleria #album li#foto2:hover{
+	background-size: 200px 200px;
+}
+
+.fotogaleria #album li#foto3:hover{
+	background-size: 200px 200px;
+}
+
+.fotogaleria #album li#foto4:hover{
+	background-size: 200px 200px;
+}
+
+.fotogaleria #album li#foto5:hover{
+	background-size: 200px 200px;
+}
+
+.fotogaleria #album li#foto6:hover{
+	background-size: 200px 200px;
+}
+
+
+			.fotogaleria #album li:hover{
+				transform: scale(1.5);
+				transition: 1s ease-in;
+
+
+			}
+
+
+
+
+@media screen and (max-width: 1060px) and (min-width: 668px) {
+	.fotogaleria #album {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+		
+}
+
+@media screen and (max-width:450px){
+		.fotogaleria #album {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+	
+	.fotogaleria #album li{
+	margin: 5px;
+	width: 150px;
+	height: 150px;
+	 }
+	
+}
